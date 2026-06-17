@@ -16,7 +16,7 @@ const Hero = () => {
             </div>
 
             <h1 className="text-5xl sm:text-6xl lg:text-7xl font-extrabold tracking-tight mb-8 leading-[1.1]">
-              THE platform to rate, rank &<br className="hidden lg:block"/>
+              THE platform to rate, rank & <br className="hidden lg:block"/>
               share the music you love.
             </h1>
 
