@@ -12,11 +12,11 @@ const Hero = () => {
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-purple-400 opacity-75"></span>
                 <span className="relative inline-flex rounded-full h-2 w-2 bg-purple-500"></span>
               </span>
-              Auralys Beta is coming soon
+              Auralys Beta is coming soon 👀
             </div>
 
             <h1 className="text-5xl sm:text-6xl lg:text-7xl font-extrabold tracking-tight mb-8 leading-[1.1]">
-              The platform to rate, rank &<br className="hidden lg:block"/>
+              THE platform to rate, rank &<br className="hidden lg:block"/>
               share the music you love.
             </h1>
 
