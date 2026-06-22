@@ -12,7 +12,7 @@ const Footer = () => {
 
           <div className="flex gap-6 text-sm text-white/80 font-medium">
             <a href="https://www.tiktok.com/@auralysapp?_r=1&_t=ZN-97Gc5yqa0LW" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">TikTok</a>
-            <a href="https://www.instagram.com/auralysapp?igsh=MTJ0cWtndTd6dG5iZA==" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">Instagram</a>
+            <a href="https://www.instagram.com/auralys.app" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">Instagram</a>
             <a href="mailto:auralysapp@gmail.com" className="hover:text-white transition-colors">Contact</a>
             <a href="#" className="hover:text-white transition-colors">Privacy Policy</a>
           </div>
