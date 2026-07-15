@@ -38,21 +38,30 @@ const WaitlistModal = ({ isOpen, onClose }) => {
     setErrorMsg('');
 
     try {
-      // Formspree endpoint — remplace "YOUR_FORM_ID" par ton ID Formspree
-      const res = await fetch('https://formspree.io/f/xnnqazwq', {
+      const SUPABASE_URL = 'https://pkpsewcopsewkgzcgzil.supabase.co';
+      const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InBrcHNld2NvcHNld2tnemNnemlsIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODE0MzUwNjEsImV4cCI6MjA5NzAxMTA2MX0.kCuR9LWKHuw5SphqbEuooO76A3GVeHFnAA_wmXMmPKk';
+
+      const res = await fetch(`${SUPABASE_URL}/rest/v1/waitlist`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
-          Accept: 'application/json',
+          'apikey': SUPABASE_ANON_KEY,
+          'Authorization': `Bearer ${SUPABASE_ANON_KEY}`,
+          'Prefer': 'return=minimal',
         },
-        body: JSON.stringify({ name, email, _subject: 'New Auralys Waitlist Signup' }),
+        body: JSON.stringify({ email, name: name || null }),
       });
 
-      if (res.ok) {
+      if (res.ok || res.status === 201) {
         setStatus('success');
       } else {
         const data = await res.json();
-        setErrorMsg(data?.errors?.[0]?.message || 'Something went wrong. Please try again.');
+        // Code 23505 = duplicate email (unique constraint)
+        if (data?.code === '23505') {
+          setErrorMsg('This email is already on the waitlist! 🎉');
+        } else {
+          setErrorMsg(data?.message || 'Something went wrong. Please try again.');
+        }
         setStatus('error');
       }
     } catch {
@@ -159,10 +168,10 @@ const WaitlistModal = ({ isOpen, onClose }) => {
                 {/* Social proof */}
                 <div className="mb-6 px-4 py-3 rounded-2xl bg-white/5 border border-white/10 flex items-center gap-3">
                   <div className="flex -space-x-2">
-                    {['#A78BFA','#F472B6','#60A5FA','#34D399'].map((c, i) => (
+                    {['#A78BFA', '#F472B6', '#60A5FA', '#34D399'].map((c, i) => (
                       <div key={i} className="w-7 h-7 rounded-full border-2 border-purple-800 flex items-center justify-center text-[10px] font-bold"
                         style={{ background: c }}>
-                        {['A','M','J','S'][i]}
+                        {['A', 'M', 'J', 'S'][i]}
                       </div>
                     ))}
                   </div>
