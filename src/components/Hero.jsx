@@ -15,7 +15,7 @@ const Hero = ({ onWaitlistOpen }) => {
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-purple-400 opacity-75" />
                 <span className="relative inline-flex rounded-full h-2 w-2 bg-purple-500" />
               </span>
-              Auralys Beta is coming soon 👀
+              Auralys Beta is now open 💜
             </div>
 
             {/* Headline */}
@@ -35,14 +35,14 @@ const Hero = ({ onWaitlistOpen }) => {
                 onClick={onWaitlistOpen}
                 className="glass-button px-7 py-4 rounded-full font-semibold flex items-center justify-center gap-2 text-base sm:text-lg hover:-translate-y-1 transition-transform duration-200"
               >
-                Join the Waitlist <ArrowRight size={20} />
+                Subscribe to the waitlist <ArrowRight size={20} />
               </button>
               <a
-                href="https://www.instagram.com/auralys.app"
+                href="https://auralys.app"
                 target="_blank" rel="noopener noreferrer"
                 className="px-7 py-4 rounded-full font-semibold text-white border border-white/20 hover:bg-white/10 transition-colors flex items-center justify-center text-base sm:text-lg"
               >
-                View Demo
+                Join Auralys
               </a>
             </div>
 
