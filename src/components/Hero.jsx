@@ -42,7 +42,7 @@ const Hero = ({ onWaitlistOpen }) => {
                 target="_blank" rel="noopener noreferrer"
                 className="px-7 py-4 rounded-full font-semibold text-white border border-white/20 hover:bg-white/10 transition-colors flex items-center justify-center text-base sm:text-lg"
               >
-                Join Auralys
+                Launch Auralys
               </a>
             </div>
 
