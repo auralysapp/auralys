@@ -9,12 +9,21 @@ import WaitlistModal from './components/WaitlistModal';
 function App() {
   const [waitlistOpen, setWaitlistOpen] = useState(false);
 
+  const path = window.location.pathname.replace(/\/+$/, '') || '/';
+
+  if (path === '/contributors') {
+    return <Contributors />;
+  }
+
   return (
     <div className="relative min-h-screen bg-gradient-to-tr from-[#A1A3F4] to-[#6738AA] selection:bg-white/30 text-white">
       {/* Decorative background radial */}
       <div
         className="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-[1000px] h-[500px] opacity-30 pointer-events-none"
-        style={{ background: 'radial-gradient(ellipse at top, rgba(255,255,255,0.4) 0%, transparent 70%)' }}
+        style={{
+          background:
+            'radial-gradient(ellipse at top, rgba(255,255,255,0.4) 0%, transparent 70%)',
+        }}
       />
 
       <Navbar onWaitlistOpen={() => setWaitlistOpen(true)} />
@@ -26,7 +35,10 @@ function App() {
 
       <Footer />
 
-      <WaitlistModal isOpen={waitlistOpen} onClose={() => setWaitlistOpen(false)} />
+      <WaitlistModal
+        isOpen={waitlistOpen}
+        onClose={() => setWaitlistOpen(false)}
+      />
     </div>
   );
 }
