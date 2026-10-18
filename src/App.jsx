@@ -11,8 +11,8 @@ function App() {
 
   const path = window.location.pathname.replace(/\/+$/, '') || '/';
 
-  if (path === '/contributors') {
-    return <Contributors />;
+  if (path === '/contribute') {
+    return <Contribute />;
   }
 
   return (
