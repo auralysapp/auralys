@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import Contributors from './pages/Contributors';
+import Contributors from './pages/Contribute';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import Features from './components/Features';
