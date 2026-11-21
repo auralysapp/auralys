@@ -47,49 +47,95 @@ const features = [
   }
 ];
 
+
 const screenshots = [
-  { file: 'screen-01.png', title: 'Your Profile' },
-  { file: 'screen-02.png', title: 'Album Reviews' },
-  { file: 'screen-03.png', title: 'Discover Music' },
-  { file: 'screen-04.png', title: 'Your Rankings' },
-  { file: 'screen-05.png', title: 'Community' },
-  { file: 'screen-06.png', title: 'Track Details' }
+  {
+    file: 'screen-01.png',
+    title: 'Your Profile',
+    description: 'Your music, your identity. Build a personal profile that reflects your musical taste and showcases your activity on Auralys.'
+  },
+  {
+    file: 'screen-02.png',
+    title: 'Album Reviews',
+    description: 'Give your opinion a place to live. Rate albums, write reviews and share your perspective on the music you discover.'
+  },
+  {
+    file: 'screen-03.png',
+    title: 'Discover Music',
+    description: 'Go beyond your usual listening habits. Explore new albums, artists and tracks, and find your next musical obsession.'
+  },
+  {
+    file: 'screen-04.png',
+    title: 'Your Rankings',
+    description: 'Put your musical preferences in order. Create personal rankings and lists to organise and showcase your favourite music.'
+  },
+  {
+    file: 'screen-05.png',
+    title: 'Community',
+    description: 'Music is better when it is shared. Connect with other listeners, explore their profiles and discover different perspectives.'
+  },
+  {
+    file: 'screen-06.png',
+    title: 'Track Details',
+    description: 'Explore music in greater detail. Find the information you need to discover, appreciate and discuss individual tracks.'
+  }
 ];
+
+
 
 
 function ScreenshotCard({ item, index }) {
   const [imageError, setImageError] = useState(false);
+  const reversed = index % 2 !== 0;
 
   return (
-    <div className="group">
-      <div className="relative flex aspect-[4/5] items-center justify-center overflow-hidden rounded-3xl border border-white/20 bg-white/10">
-
-        {!imageError ? (
-          <img
-            src={`/features/${item.file}`}
-            alt={item.title}
-            loading="lazy"
-            className="h-full w-full object-contain transition duration-500 group-hover:scale-[1.02]"
-            onError={() => setImageError(true)}
-          />
-        ) : (
-          <div className="flex flex-col items-center justify-center gap-3 p-5 text-center">
-            <ImagePlus size={32} className="text-white/60" />
-            <span className="text-xs uppercase tracking-widest text-white/50">
-              Screenshot {String(index + 1).padStart(2, '0')}
-            </span>
-            <span className="text-sm text-white/60">
-              Add {item.file}
-            </span>
-          </div>
-        )}
-
+    <article
+      className={`flex flex-col items-center gap-10 md:gap-16 ${
+        reversed ? 'md:flex-row-reverse' : 'md:flex-row'
+      }`}
+    >
+      {/* Screenshot */}
+      <div className="group w-full md:w-1/2">
+        <div className="relative mx-auto flex aspect-[4/5] max-w-md items-center justify-center overflow-hidden rounded-3xl border border-white/20 bg-white/10 shadow-2xl shadow-black/10">
+          {!imageError ? (
+            <img
+              src={`/features/${item.file}`}
+              alt={item.title}
+              loading="lazy"
+              className="h-full w-full object-contain transition duration-700 group-hover:scale-[1.02]"
+              onError={() => setImageError(true)}
+            />
+          ) : (
+            <div className="flex flex-col items-center gap-3 p-5 text-center">
+              <ImagePlus size={32} className="text-white/60" />
+              <span className="text-xs uppercase tracking-widest text-white/50">
+                Screenshot {String(index + 1).padStart(2, '0')}
+              </span>
+              <span className="text-sm text-white/60">
+                Add {item.file}
+              </span>
+            </div>
+          )}
+        </div>
       </div>
 
-      <h3 className="mt-4 font-semibold text-white">
-        {item.title}
-      </h3>
-    </div>
+      {/* Description */}
+      <div className="w-full max-w-lg md:w-1/2">
+        <p className="mb-5 text-xs font-bold uppercase tracking-[0.25em] text-white/50">
+          Feature {String(index + 1).padStart(2, '0')}
+        </p>
+
+        <h3 className="text-3xl font-bold tracking-tight sm:text-4xl lg:text-5xl">
+          {item.title}
+        </h3>
+
+        <p className="mt-6 text-base leading-relaxed text-white/70 sm:text-lg">
+          {item.description}
+        </p>
+
+        <div className="mt-8 h-px w-16 bg-white/40" />
+      </div>
+    </article>
   );
 }
 
@@ -192,19 +238,16 @@ export default function FeaturesPage() {
               </p>
             </div>
 
-            <div className="grid grid-cols-2 gap-6 sm:grid-cols-3">
+            
+            <div className="flex flex-col gap-24 sm:gap-32">
               {screenshots.map((item, index) => (
                 <ScreenshotCard
-                  key={item.file}
-                  item={item}
-                  index={index}
+                key={item.file}
+                item={item}
+                index={index}
                 />
               ))}
             </div>
-
-            <p className="mt-10 text-center text-xs text-white/45">
-              Add your screenshots to public/features/
-            </p>
 
           </div>
         </section>
