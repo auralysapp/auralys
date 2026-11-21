@@ -16,6 +16,10 @@ function App() {
     return <Contribute />;
   }
 
+  if (path === '/features') {
+  return <FeaturesPage />;
+}
+
   return (
     <div className="relative min-h-screen bg-gradient-to-tr from-[#A1A3F4] to-[#6738AA] selection:bg-white/30 text-white">
       {/* Decorative background radial */}
