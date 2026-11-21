@@ -1,5 +1,6 @@
 
 import Navbar from './Navbar';
+import { useState } from 'react';
 import Footer from './Footer';
 import {
   ArrowUpRight,
