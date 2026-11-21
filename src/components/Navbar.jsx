@@ -7,7 +7,7 @@ const Navbar = ({ onWaitlistOpen }) => {
   const toggleMobile = () => setMobileOpen((v) => !v);
 
   const navLinks = [
-    { label: 'Features', href: '#features' },
+    { label: 'Features', href: '/features' },
     { label: 'About', href: '#about' },
   ];
 
