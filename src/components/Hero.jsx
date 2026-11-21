@@ -31,12 +31,6 @@ const Hero = ({ onWaitlistOpen }) => {
 
             {/* CTAs */}
             <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 sm:gap-4 justify-center lg:justify-start">
-              <button
-                onClick={onWaitlistOpen}
-                className="glass-button px-7 py-4 rounded-full font-semibold flex items-center justify-center gap-2 text-base sm:text-lg hover:-translate-y-1 transition-transform duration-200"
-              >
-                Subscribe to the waitlist <ArrowRight size={20} />
-              </button>
               <a
                 href="https://auralys.app"
                 target="_blank" rel="noopener noreferrer"
