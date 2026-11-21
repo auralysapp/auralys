@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { ArrowDownRight, ArrowRight, Code2, Palette, Megaphone, Handshake, TrendingUp, Music2, Lightbulb, Mail, Github } from 'lucide-react';
+import { ArrowDownRight, ArrowRight, Code2, Palette, Megaphone, Handshake, TrendingUp, Music2, Lightbulb, Mail, GitBranch } from 'lucide-react';
 import './Contribute.css';
 
 const contributionAreas = [
@@ -147,7 +147,7 @@ export default function Contribute() {
             <h2>Every great collaboration<br /><span>starts with a conversation.</span></h2>
             <p>Tell us a little about yourself and how you’d like to get involved. We’ll take it from there.</p>
             <a className="email-link" href="mailto:contact@auralys.app"><Mail size={17} /> contact@auralys.app</a>
-            <a className="github-link" href="https://github.com/auralysapp/auralys" target="_blank" rel="noreferrer"><Github size={16} /> Explore the project on GitHub <ArrowRight size={15} /></a>
+            <a className="github-link" href="https://github.com/auralysapp/auralys" target="_blank" rel="noreferrer"><GitBranch size={16} /> Explore the project on GitHub <ArrowRight size={15} /></a>
           </div>
           <form className="contact-form" onSubmit={submit}>
             <label>Your name<input name="name" value={form.name} onChange={update} placeholder="Name" required /></label>
