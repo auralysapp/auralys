@@ -55,28 +55,34 @@ const screenshots = [
   { file: 'screen-06.png', title: 'Track Details' }
 ];
 
+
 function ScreenshotCard({ item, index }) {
+  const [imageError, setImageError] = useState(false);
+
   return (
     <div className="group">
-      <div className="relative aspect-[4/5] overflow-hidden rounded-3xl border border-white/20 bg-white/10">
-        <img
-          src={`/features/${item.file}`}
-          alt={item.title}
-          className="h-full w-full object-cover transition duration-500 group-hover:scale-105"
-          onError={(e) => {
-            e.currentTarget.style.display = 'none';
-          }}
-        />
+      <div className="relative flex aspect-[4/5] items-center justify-center overflow-hidden rounded-3xl border border-white/20 bg-white/10">
 
-        <div className="absolute inset-0 flex flex-col items-center justify-center gap-3 p-5 text-center">
-          <ImagePlus size={32} className="text-white/60" />
-          <span className="text-xs uppercase tracking-widest text-white/50">
-            Screenshot {String(index + 1).padStart(2, '0')}
-          </span>
-          <span className="text-sm text-white/60">
-            Add {item.file}
-          </span>
-        </div>
+        {!imageError ? (
+          <img
+            src={`/features/${item.file}`}
+            alt={item.title}
+            loading="lazy"
+            className="h-full w-full object-contain transition duration-500 group-hover:scale-[1.02]"
+            onError={() => setImageError(true)}
+          />
+        ) : (
+          <div className="flex flex-col items-center justify-center gap-3 p-5 text-center">
+            <ImagePlus size={32} className="text-white/60" />
+            <span className="text-xs uppercase tracking-widest text-white/50">
+              Screenshot {String(index + 1).padStart(2, '0')}
+            </span>
+            <span className="text-sm text-white/60">
+              Add {item.file}
+            </span>
+          </div>
+        )}
+
       </div>
 
       <h3 className="mt-4 font-semibold text-white">
