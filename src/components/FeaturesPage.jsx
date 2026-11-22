@@ -51,7 +51,7 @@ const features = [
 const screenshots = [
   {
     file: 'screen-01.png',
-    title: 'Your Profile',
+    title: 'Home Page',
     description: 'Discover the songs your friends have shared, quests, and trending songs. Browse through the different categories on the home page!'
   },
   {
@@ -61,7 +61,7 @@ const screenshots = [
   },
   {
     file: 'screen-03.png',
-    title: 'Leave a review',
+    title: 'Leave a Review',
     description: 'Leave a rating and a comment for the song of your choice. You can share this rating on your favorite social media platforms, and even listen to the song on your music app.'
   },
   {
@@ -71,7 +71,7 @@ const screenshots = [
   },
   {
     file: 'screen-05.png',
-    title: 'Blind test game',
+    title: 'Blind test Game',
     description: "Here's an example of one of our music games. Choose to play solo or with friends, decide on the number of rounds, and, of course, the type of music you want to guess."
   },
   {
