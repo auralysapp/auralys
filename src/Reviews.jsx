@@ -7,7 +7,7 @@ const reviews = [
     name: 'Ines',
     handle: '@inesnic',
     avatar: '/pfp/inesnic.jpg',
-    date: '5:5 rated',
+    date: '5/5 rated',
     text: "The app is simply amazing. Since I started using it, I've discovered so many new artists. It has helped me diversify my music library and find some real hidden gems. I would recommend it to everyone, whether you're a music enthusiast or just getting started!",
     size: 'large',
     tone: 'light',
