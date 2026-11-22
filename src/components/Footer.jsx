@@ -29,7 +29,7 @@ const Footer = () => {
             </a>
             
             <a href="mailto:contact@auralys.app" className="hover:text-white transition-colors">Contact</a>
-            <a href="/terms-of-use"className="hover:text-white transition-colors">Terms of Use</a>
+            <a href="/terms-of-use"className="hover:text-white transition-colors">Terms of Use</a> 
             <a href="privacy-policy" className="hover:text-white transition-colors">Privacy Policy</a>
           </div>
         </div>
