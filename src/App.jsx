@@ -6,6 +6,7 @@ import Features from './components/Features';
 import Footer from './components/Footer';
 import WaitlistModal from './components/WaitlistModal';
 import FeaturesPage from './components/FeaturesPage';
+import PrivacyPolicy from './PrivacyPolicy';
 
 function App() {
   const [waitlistOpen, setWaitlistOpen] = useState(false);
