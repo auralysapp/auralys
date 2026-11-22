@@ -8,6 +8,7 @@ import WaitlistModal from './components/WaitlistModal';
 import FeaturesPage from './components/FeaturesPage';
 import PrivacyPolicy from './PrivacyPolicy';
 import TermsOfUse from './TermsOfUse';
+import Reviews from './Reviews';
 
 function App() {
   const [waitlistOpen, setWaitlistOpen] = useState(false);
@@ -17,6 +18,10 @@ function App() {
   if (path === '/contribute') {
     return <Contribute />;
   }
+
+  if (path === '/reviews') {
+  return <Reviews />;
+}
 
   if (path === '/features') {
   return <FeaturesPage />;
