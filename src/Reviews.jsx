@@ -255,10 +255,6 @@ export default function Reviews() {
             ))}
           </div>
 
-          <p className="mt-16 text-center text-xs text-white/45">
-            Les témoignages et profils présentés ici sont fictifs et servent uniquement
-            d'exemple de mise en page.
-          </p>
         </section>
 
         {/* CLOSING */}
