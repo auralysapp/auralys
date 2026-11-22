@@ -224,13 +224,12 @@ export default function Reviews() {
             </h1>
 
             <p className="mx-auto mt-7 max-w-2xl text-base leading-relaxed text-white/75 sm:text-lg">
-              Des découvertes inattendues, des albums qui marquent et des passions
-              partagées. Découvrez les petits mots de la communauté Auralys.
+              Unexpected discoveries, unforgettable albums, and shared passions. Read what the Auralys community has to say.
             </p>
 
             <div className="mt-8 inline-flex items-center gap-2 rounded-full border border-white/15 bg-[#351765]/20 px-4 py-2 text-xs text-white/65 backdrop-blur-md">
               <Disc3 size={14} />
-              12 histoires · Une même passion
+              12 stories · One shared passion
             </div>
           </div>
         </section>
@@ -241,7 +240,7 @@ export default function Reviews() {
             <p className="text-xs font-bold uppercase tracking-[0.22em] text-white/55">
               The community wall
             </p>
-            <p className="text-xs text-white/45">Quelques mots, beaucoup de musique.</p>
+            <p className="text-xs text-white/45">A few words, a lot of music.</p>
           </div>
 
           <div className="grid grid-cols-1 items-start gap-5 sm:grid-cols-2 md:grid-cols-12 md:auto-rows-min md:gap-x-5 md:gap-y-9">
@@ -265,8 +264,7 @@ export default function Reviews() {
               Every music story matters.
             </h2>
             <p className="mx-auto mt-5 max-w-xl leading-relaxed text-white/70">
-              Auralys se construit aussi grâce à celles et ceux qui font vivre
-              la musique. Continuez à découvrir, noter et partager.
+              Auralys is also shaped by the people who bring music to life. Keep discovering, rating, and sharing.
             </p>
           </div>
         </section>
