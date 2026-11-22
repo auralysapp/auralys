@@ -6,10 +6,12 @@ const Navbar = ({ onWaitlistOpen }) => {
 
   const toggleMobile = () => setMobileOpen((v) => !v);
 
-  const navLinks = [
-    { label: 'Features', href: '/features' },
-    { label: 'About', href: '#about' },
-  ];
+ 
+const navLinks = [
+  { label: 'Home', href: '/' },
+  { label: 'Features', href: '/features' },
+  { label: 'About', href: '#about' },
+];
 
   return (
     <nav className="fixed top-0 w-full z-50 transition-all duration-300 bg-[#6738AA]/20 backdrop-blur-md border-b border-white/10">
