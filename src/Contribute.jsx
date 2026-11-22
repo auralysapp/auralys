@@ -242,7 +242,7 @@ export default function Contribute() {
         </section>
 
       </main>
-
+ 
       <Footer />
 
     </div>
