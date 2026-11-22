@@ -22,6 +22,10 @@ function App() {
   return <FeaturesPage />;
 }
 
+  if (path === '/terms-of-use') {
+  return <TermsOfUse />;
+}
+
   if (path === '/privacy-policy') {
   return <PrivacyPolicy />;
 }
