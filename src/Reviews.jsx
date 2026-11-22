@@ -61,7 +61,7 @@ const reviews = [
     tone: 'glass',
   },
   {
-    name: 'Clarisse',
+    name: 'Clarice',
     handle: '@clarisse',
     avatar: '/pfp/clarisse.jpg',
     date: '5/5 rated',
