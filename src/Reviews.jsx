@@ -49,7 +49,7 @@ const reviews = [
     handle: '@alvin',
     avatar: '/pfp/alvin.jpg',
     rating: 5,
-    date: 'Il y a 3 mois',
+    date: '3 months ago',
     text: "Auralys is a wonderful app for rating, sorting, and organizing your favorite music. Its design is beautiful, clean, and well-organized, making the overall experience particularly enjoyable. Everything is easy to understand and navigate, making you want to come back and use it again. What I particularly love is the ability to gradually build your own musical profile and keep track of your tastes and discoveries. It's an app that truly makes you want to experience your passion for music in a whole new way!",
     size: 'medium',
     tone: 'light',
