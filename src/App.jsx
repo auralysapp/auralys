@@ -21,6 +21,10 @@ function App() {
   return <FeaturesPage />;
 }
 
+  if (path === '/privacy-policy') {
+  return <PrivacyPolicy />;
+}
+
   return (
     <div className="relative min-h-screen bg-gradient-to-tr from-[#A1A3F4] to-[#6738AA] selection:bg-white/30 text-white">
       {/* Decorative background radial */}
