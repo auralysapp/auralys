@@ -1,4 +1,3 @@
-
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import {
@@ -79,6 +78,37 @@ export default function Contribute() {
               className="mt-9 inline-flex items-center gap-2 rounded-full bg-white px-7 py-4 font-semibold text-purple-700 transition hover:-translate-y-1"
             >
               Get in touch
+              <ArrowUpRight size={18} />
+            </a>
+
+          </div>
+        </section>
+
+        {/* ULULE CAMPAIGN */}
+        <section className="px-4 pb-24 sm:px-6">
+          <div className="mx-auto max-w-5xl rounded-[2rem] border border-white/20 bg-white/10 px-8 py-14 text-center backdrop-blur-xl sm:px-14">
+
+            <p className="mb-4 text-xs font-bold uppercase tracking-widest text-white/60">
+              Support Auralys
+            </p>
+
+            <h2 className="text-3xl font-extrabold sm:text-5xl">
+              Help us bring Auralys to life.
+            </h2>
+
+            <p className="mx-auto mt-5 max-w-2xl leading-relaxed text-white/75">
+              Every contribution helps us develop Auralys and build a community
+              where music lovers can discover, rate and share the music they love.
+              Join our crowdfunding campaign and be part of the journey.
+            </p>
+
+            <a
+              href="https://fr.ulule.com/auralys-app/coming-soon"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-9 inline-flex items-center gap-2 rounded-full bg-white px-8 py-4 font-bold text-purple-700 transition hover:-translate-y-1"
+            >
+              Support us on Ulule
               <ArrowUpRight size={18} />
             </a>
 
@@ -242,7 +272,7 @@ export default function Contribute() {
         </section>
 
       </main>
- 
+
       <Footer />
 
     </div>
