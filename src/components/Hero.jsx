@@ -20,8 +20,9 @@ const Hero = ({ onWaitlistOpen }) => {
 
             {/* Headline */}
             <h1 className="text-4xl sm:text-5xl lg:text-7xl font-extrabold tracking-tight mb-5 sm:mb-8 leading-[1.1]">
-              THE platform to rate, rank &<br className="hidden sm:block" />
-               share the music you love.
+             THE platform to rate, rank &amp;
+              <br className="hidden sm:block" />
+              {' '}share the music you love.
             </h1>
 
             {/* Subtext */}
