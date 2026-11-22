@@ -52,32 +52,32 @@ const screenshots = [
   {
     file: 'screen-01.png',
     title: 'Your Profile',
-    description: 'Your music, your identity. Build a personal profile that reflects your musical taste and showcases your activity on Auralys.'
+    description: 'Discover the songs your friends have shared, quests, and trending songs. Browse through the different categories on the home page!'
   },
   {
     file: 'screen-02.png',
-    title: 'Album Reviews',
-    description: 'Give your opinion a place to live. Rate albums, write reviews and share your perspective on the music you discover.'
+    title: 'Search Page',
+    description: "Search for your favorite albums and artists, or access a user's account by searching for their username."
   },
   {
     file: 'screen-03.png',
-    title: 'Discover Music',
-    description: 'Go beyond your usual listening habits. Explore new albums, artists and tracks, and find your next musical obsession.'
+    title: 'Leave a review',
+    description: 'Leave a rating and a comment for the song of your choice. You can share this rating on your favorite social media platforms, and even listen to the song on your music app.'
   },
   {
     file: 'screen-04.png',
-    title: 'Your Rankings',
-    description: 'Put your musical preferences in order. Create personal rankings and lists to organise and showcase your favourite music.'
+    title: 'Auralys Space',
+    description: 'Play, discover the latest releases, and compete with your friends. A true hub centered around our favorite world: music!'
   },
   {
     file: 'screen-05.png',
-    title: 'Community',
-    description: 'Music is better when it is shared. Connect with other listeners, explore their profiles and discover different perspectives.'
+    title: 'Blind test game',
+    description: "Here's an example of one of our music games. Choose to play solo or with friends, decide on the number of rounds, and, of course, the type of music you want to guess."
   },
   {
     file: 'screen-06.png',
-    title: 'Track Details',
-    description: 'Explore music in greater detail. Find the information you need to discover, appreciate and discuss individual tracks.'
+    title: 'Your Profile',
+    description: 'Your music, your identity. Build a personal profile that reflects your musical taste and showcases your activity on Auralys.'
   }
 ];
 
