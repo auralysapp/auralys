@@ -6,7 +6,7 @@ const sections = [
   {
     title: '1. Data controller',
     content: <>
-      <p>Solipsisme, the publisher of Auralys, is responsible for the processing described in this policy. For any question or to exercise a right, contact us at <a href="mailto:contact@auralys.app">contact@auralys.app</a>.</p>
+      <p>Solipsism, the publisher of Auralys, is responsible for the processing described in this policy. For any question or to exercise a right, contact us at <a href="mailto:contact@auralys.app">contact@auralys.app</a>.</p>
       <p>Auralys does not sell your personal data or use it for targeted advertising.</p>
     </>
   },
