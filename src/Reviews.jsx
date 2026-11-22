@@ -4,13 +4,11 @@ import { Music2, Star, Sparkles, Disc3 } from 'lucide-react';
 
 const reviews = [
   {
-    name: 'Emma Laurent',
-    handle: '@emmalovesmusic',
-    avatar: 'https://i.pravatar.cc/120?img=47',
-    rating: 5,
-    date: 'Il y a 2 jours',
-    text: "Je pensais simplement venir noter quelques albums… Finalement, j'ai découvert tellement d'artistes que je n'aurais probablement jamais écoutés. C'est devenu mon petit rituel du soir !",
-    tag: 'Découvertes musicales',
+    name: 'Ines',
+    handle: '@inesnic',
+    avatar: '/pfp/inesnic.jpg',
+    date: '5:5 rated',
+    text: "The app is simply amazing. Since I started using it, I've discovered so many new artists. It has helped me diversify my music library and find some real hidden gems. I would recommend it to everyone, whether you're a music enthusiast or just getting started!",
     size: 'large',
     tone: 'light',
   },
