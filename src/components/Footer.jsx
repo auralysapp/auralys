@@ -28,7 +28,7 @@ const Footer = () => {
               Instagram
             </a>
             <a href="mailto:contact@auralys.app" className="hover:text-white transition-colors">Contact</a>
-            <a href="#" className="hover:text-white transition-colors">Privacy Policy</a>
+            <a href="privacy-policy" className="hover:text-white transition-colors">Privacy Policy</a>
           </div>
         </div>
 
