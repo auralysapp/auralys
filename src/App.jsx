@@ -21,7 +21,7 @@ function App() {
   if (path === '/features') {
   return <FeaturesPage />;
 }
-
+ 
   if (path === '/terms-of-use') {
   return <TermsOfUse />;
 }
