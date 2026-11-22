@@ -10,6 +10,7 @@ const Navbar = ({ onWaitlistOpen }) => {
 const navLinks = [
   { label: 'Home', href: '/' },
   { label: 'Features', href: '/features' },
+  { label: 'Contribute', href: '/contribute' },
 ];
 
   return (
