@@ -9,6 +9,7 @@ import FeaturesPage from './components/FeaturesPage';
 import PrivacyPolicy from './PrivacyPolicy';
 import TermsOfUse from './TermsOfUse';
 import Reviews from './Reviews';
+import Playground from './Playground';
 
 function App() {
   const [waitlistOpen, setWaitlistOpen] = useState(false);
@@ -18,6 +19,10 @@ function App() {
   if (path === '/contribute') {
     return <Contribute />;
   }
+
+  if (path === '/playground') {
+  return <Playground />;
+}
 
   if (path === '/reviews') {
   return <Reviews />;
