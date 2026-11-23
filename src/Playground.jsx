@@ -201,10 +201,9 @@ export default function Playground() {
         <section className="relative z-10 pt-16 sm:pt-24 bg-gradient-to-b from-[#4A2A84] to-transparent">
           <div className="max-w-7xl mx-auto px-4 sm:px-6">
             <div className="text-center mb-12 sm:mb-20">
-              <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 sm:mb-6">One balloon. One community.</h2>
+              <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 sm:mb-6">A sky full of balloons. One community.</h2>
               <p className="text-white/90 max-w-2xl mx-auto text-base sm:text-lg px-2">
-                The Playground isn&apos;t a personal game. It&apos;s a shared sky: every member pushes the same balloon,
-                and every reward lands in everyone&apos;s pocket.
+                Let&apos;s be honest: ads are boring. But they help keep Auralys alive. Watch one, and get rewarded.
               </p>
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-8">
@@ -226,8 +225,8 @@ export default function Playground() {
             <div className="glass-panel mt-10 mx-auto max-w-3xl rounded-3xl px-7 py-6 flex gap-4 items-start text-white/90 leading-relaxed">
               <span className="text-2xl leading-none">💜</span>
               <p>
-                <b className="text-white">Rewards belong to the whole community.</b> There&apos;s no individual leaderboard and
-                no personal balloon: we take off together, we reach the aurora together.
+                <b className="text-white">This is the community playground.</b> Your own personal playground is
+                   waiting for you in the app, coming in January.
               </p>
             </div>
           </div>
