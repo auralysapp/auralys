@@ -38,8 +38,8 @@ export const MILESTONES = [
   {
     ads: 100000,
     title: 'Stratosphere',
-    reward: '1 month of premium features',
-    desc: 'Advanced stats, unlimited rankings and early access to upcoming features, unlocked for all members for 30 days.',
+    reward: '2 weeks of premium features',
+    desc: 'Advanced stats, unlimited rankings and early access to upcoming features, unlocked for all members for 15 days.',
     icon: Sparkles,
     chip: 'purple',
   },
